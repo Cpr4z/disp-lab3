@@ -27,7 +27,7 @@ from schemas.ticket import (
     TicketPurchaseResponse
 )
 from utils.settings import get_settings
-from utils.reqestQueue import RequestQueue
+from utils.requestQueue import RequestQueue
 
 
 class GatewayService():
