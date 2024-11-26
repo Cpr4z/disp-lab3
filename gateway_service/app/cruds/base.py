@@ -1,4 +1,5 @@
 import inspect
+from fastapi import status
 
 from exceptions.http_exceptions import (
     InvalidRequestException,
