@@ -1,9 +1,10 @@
+import requests
 from uuid import UUID
 
 from cruds.interfaces.flight import IFlightCRUD
 from cruds.interfaces.ticket import ITicketCRUD
 from cruds.interfaces.bonus import IBonusCRUD
-from exceptions.http_exceptions import NotFoundException
+from exceptions.http_exceptions import NotFoundException, ServiceUnavailableException
 from enums.status import TicketStatus, PrivilegeHistoryStatus, PrivilegeStatus
 from schemas.user import UserInfoResponse
 from schemas.flight import (
